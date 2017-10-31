@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -605,10 +605,7 @@ namespace FlowRegime
                         return;
                     }
                 }
-                else /*goto CalcDelta;
-            } else {
-            CalcDelta:*/
-                {
+            }
                     AnnularMistTransitions(ref Key_am, ref Key_f);
                     if (Key_am)
                     {
@@ -652,8 +649,6 @@ namespace FlowRegime
                         }
                     }
                 }
-            }
-        }
 
         public void CalcLiquidVolumeFraction()//Расчет фазового содержания жидкости
         {
